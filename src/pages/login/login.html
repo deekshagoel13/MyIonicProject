@@ -1,0 +1,21 @@
+<ion-header>
+  <h2 text-center>Login</h2>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-item>
+      <ion-label color="primary" stacked>Email</ion-label>
+      <ion-input placeholder="Email" clearInput #em></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" stacked>Password</ion-label>
+      <ion-input type="password" placeholder="Password" clearInput #pw></ion-input>
+    </ion-item>
+    <p>
+      <button ion-button (click)="handleClick(em.value,pw.value)" [style.margin-left]="'120px'">
+        Log in
+      </button>
+    </p>
+  </div>
+</ion-content>
